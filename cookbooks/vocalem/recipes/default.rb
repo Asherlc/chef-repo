@@ -22,7 +22,7 @@ set_unless[:my_password] = secure_password
 include_recipe "database::postgresql"
 postgresql_database 'vocalem_production' do
   connection(
-    :host      => '127.0.0.1'
+    :host      => '127.0.0.1',
     :port      => 5432,
     :username  => 'deploy'
   )
