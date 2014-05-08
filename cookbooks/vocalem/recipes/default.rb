@@ -16,3 +16,8 @@ rbenv_ruby "2.1.1"
 rbenv_gem "bundler" do
   ruby_version "2.1.1"
 end
+
+include Opscode::OpenSSL::Password
+set_unless[:my_password] = secure_password
+
+
