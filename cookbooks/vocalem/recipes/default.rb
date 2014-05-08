@@ -24,7 +24,7 @@ postgresql_database 'vocalem_production' do
   connection(
     :host      => '127.0.0.1'
     :port      => 5432,
-    :username  => 'deploy',
+    :username  => 'deploy'
   )
   action :create
 end
